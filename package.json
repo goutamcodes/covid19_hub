@@ -1,0 +1,27 @@
+{
+  "name": "covid19_project",
+  "version": "1.0.0",
+  "description": "Welcome to covid-19 information hub.",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "start": "node index.js",
+    "index": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run index\" \"npm run client\""
+  },
+  "keywords": [
+    "Minor1",
+    "Project"
+  ],
+  "author": "Goutam Abrol",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "mongoose": "^8.2.2"
+  }
+}
